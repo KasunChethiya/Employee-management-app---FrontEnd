@@ -1,14 +1,14 @@
 <ul class="nav justify-content-center">
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">Active</a>
+      <button class="nav-link active" aria-current="page" >Active</button>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
+      <button class="nav-link" [routerLink]="['/add-employee']">Add Employee</button>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
+      <button class="nav-link"  [routerLink]="['/view-all-employee']">View All Employee</button>
     </li>
     <li class="nav-item">
-      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+      <button class="nav-link disabled" aria-disabled="true">Disabled</button>
     </li>
   </ul>
