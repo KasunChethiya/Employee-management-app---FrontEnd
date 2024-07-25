@@ -1,1 +1,22 @@
-<p>view-all-employee works!</p>
+
+<h1 class="text-center mb-4 bg-dark text-white p-4 border-3">View All Employee</h1>
+
+<div class="container">
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Department</th>
+            <th>Role</th>
+        </tr>
+        <tr *ngFor="let employee of employeeList">
+            <td>{{employee.id}}</td>
+            <td>{{employee.firstName+" "+employee.lastName}}</td>
+            <td>{{employee.email}}</td>
+            <td>{{employee.departmentId}}</td>
+            <td>{{employee.roleId}}</td>
+        </tr>
+    </table>
+</div>
+
